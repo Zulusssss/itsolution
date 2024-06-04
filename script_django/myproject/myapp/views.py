@@ -13,7 +13,8 @@ def generate_video(text):
     font_size = 20
     fps = 24
 
-    font = ImageFont.truetype("arial.ttf", font_size)
+    font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+    font = ImageFont.truetype(font_path, font_size)
 
     dummy_img = Image.new('RGB', (width, height), color='black')
     draw = ImageDraw.Draw(dummy_img)
